@@ -23,14 +23,7 @@ def encrypt_image(image_path, key, output_path):
 
 
 def decrypt_image(image_path, key, output_path):
-    """
-    Decrypts an image by reversing the pixel manipulation using the given key.
-
-    Parameters:
-    - image_path: str, the path of the encrypted image.
-    - key: int, the decryption key (same as the encryption key).
-    - output_path: str, the path to save the decrypted image.
-    """
+   
     # Open the image
     img = Image.open(image_path)
     img = img.convert('RGB')
